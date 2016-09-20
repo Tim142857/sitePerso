@@ -9,6 +9,11 @@
     <script src="{{ asset('bundles/core/js/visible.js') }}"></script>
 {% endblock %}
 {% block body %}
+    <div class="se-pre-con"></div>
+
+    {% for flash_message in app.session.flashBag.get('demande de contact') %}
+        <p class="alert alert-success">{{ flash_message }}</p>
+    {% endfor %}
     <div class="container-fluid" id="banniere">
         <div class="row">
             <div class="col-xs-12">
@@ -35,30 +40,32 @@
         <div class="container">
             <div class="row bandeau" id="bandeau-qui-suis-je">
                 <div class="col-xs-12">
-                    <div class="title">
-                        <h2>QUI SUIS - JE ?</h2>
-                        <div class="title-puce">
-                            <img class="img-responsive" src="{{ asset('bundles/core/images/puce.PNG') }}" alt="puce">
+                    <section class="section--purple wow flipInX" data-wow-duration="2s">
+                        <div class="title">
+                            <h2>PRESENTATION</h2>
+                            <div class="title-puce">
+                                <img class="img-responsive" src="{{ asset('bundles/core/images/puce.PNG') }}" alt="puce">
+                            </div>
                         </div>
-                    </div>
+                    </section>
                     <div class="bandeau-content">
                         <div class="row">
                             <div class="col-xs-12 col-sm-4">
                                 <div class="partie-premier-bandeau">
                                     <h2>Qui suis-je?</h2>
-                                    <p>Jeune développeur passionné de développement en tout genre,<br/> je suis un breton de 24 ans</p>
+                                    <p>Jeune développeur passionné de développement en tout genre,<br/> je suis un breton de 24 ans. Ayant travaillé 7 ans dans la restauration, j'ai décidé de transformer ma passion en véritable profession.</p>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4">
                                 <div class="partie-premier-bandeau">
-                                    <h2>Pourquoi me choisir?</h2>
-                                    <p>blabla<br/>et blablalblabla<br/>Encore blablablababla<br/>Et pour finir blablabla</p>
+                                    <h2>Ce que je réalise</h2>
+                                    <p>Pas de sous traitance, je réalise tout ce que je propose: Des solutions sur mesures, adaptées à vos besoins. Mes sites sont, à votre demande, optimisés pour tout type de plateformes( PC, tablette, téléphone, ...).
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4">
                                 <div class="partie-premier-bandeau">
                                     <h2>Plus qu'un travail, une passion</h2>
-                                    <p>blabla<br/>et blablalblabla<br/>Encore blablablababla<br/>Et pour finir blablabla</p>
+                                    <p>Fort d'un véritable engouement pour le développement, moi et mes outils se mettont à jour fréquemment afin de pouvoir toujours utiliser ce qui se fait de mieux. La nouveauté n'est pour moi qu'un challenge perpétuel.</p>
                                 </div>
                             </div>
                         </div>
@@ -143,12 +150,9 @@
     <div class="container-fluid bg-black">
         <div class="row intersection" id="intersection2">            
             <div class="col-xs-12 col-sm-6 intersection-inner">
-                <div>Restons en contact, </div><br/>
+                <div>Besoin d'un conseil? Un projet à réaliser?</div><br/>
                 <div>
-                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                    <span id="mail">timothyleroch@gmail.com</span>
+                    <a href='mailto:timothyleroch@gmail.com'><span id="mail">timothyleroch@gmail.com</span></a>
                 </div>
             </div>
         </div>
@@ -172,7 +176,11 @@
                                 <div class="view-container">
                                     <div class="view">
                                         <div class="view-back">
-                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                            <span>PHP</span>
+                                            <span>SQL</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span><a href="http://dev.office-notarial-pace.com/"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
                                         </div>
                                         <div class="slice s1">
                                             <span class="overlay"></span>
@@ -190,8 +198,6 @@
                                             </div><!-- /s2 -->
                                         </div><!-- /s1 -->
                                     </div><!-- /view -->
-                                </div>
-                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
                                 </div>
                             </div>  
                         </div>
@@ -204,7 +210,11 @@
                                 <div class="view-container">
                                     <div class="view">
                                         <div class="view-back">
-                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                            <span>PHP</span>
+                                            <span>SQL</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span><a href="http://dev.office-notarial-pace.com/"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
                                         </div>
                                         <div class="slice s1">
                                             <span class="overlay"></span>
@@ -222,21 +232,22 @@
                                             </div><!-- /s2 -->
                                         </div><!-- /s1 -->
                                     </div><!-- /view -->
-                                </div>
-                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
                                 </div>
                             </div>  
                         </div>
                         <div class="col-xs-12 col-sm-6 partie-portfolio" id="black-query">
                             <div class="partie-portfolio-inner">
                                 <div class="title-partie-portfolio">
-                                    <h3>Office notarial de Pacé</h3>
-                                    <h4>Présentation d'un office notarial</h4>
+                                    <h3>Black Query</h3>
+                                    <h4>Jeu navigateur de BlackJack </h4>
                                 </div>
                                 <div class="view-container">
                                     <div class="view">
                                         <div class="view-back">
-                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>Jquery</span>
+                                            <span><a href="http://dev.office-notarial-pace.com/"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
                                         </div>
                                         <div class="slice s1">
                                             <span class="overlay"></span>
@@ -254,21 +265,24 @@
                                             </div><!-- /s2 -->
                                         </div><!-- /s1 -->
                                     </div><!-- /view -->
-                                </div>
-                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
                                 </div>
                             </div>  
                         </div>
-                        <div class="col-xs-12 col-sm-6 partie-portfolio" id="site-4">
+                        <div class="col-xs-12 col-sm-6 partie-portfolio" id="risk">
                             <div class="partie-portfolio-inner">
                                 <div class="title-partie-portfolio">
-                                    <h3>Office notarial de Pacé</h3>
-                                    <h4>Présentation d'un office notarial</h4>
+                                    <h3>Risk Like</h3>
+                                    <h4>Jeu de stratégie par navigateur</h4>
                                 </div>
                                 <div class="view-container">
                                     <div class="view">
                                         <div class="view-back">
-                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                            <span>PHP</span>
+                                            <span>SQL</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>Jquery</span>
+                                            <span><a href="http://tleroch.fr/RiskBeta/web/"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
                                         </div>
                                         <div class="slice s1">
                                             <span class="overlay"></span>
@@ -286,21 +300,23 @@
                                             </div><!-- /s2 -->
                                         </div><!-- /s1 -->
                                     </div><!-- /view -->
-                                </div>
-                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
                                 </div>
                             </div>  
                         </div>
                         <div class="col-xs-12 col-sm-6 partie-portfolio" id="site-5">
                             <div class="partie-portfolio-inner">
                                 <div class="title-partie-portfolio">
-                                    <h3>Office notarial de Pacé</h3>
-                                    <h4>Présentation d'un office notarial</h4>
+                                    <h3>Réservé</h3>
+                                    <h4>Votre place vous attend !</h4>
                                 </div>
                                 <div class="view-container">
                                     <div class="view">
                                         <div class="view-back">
-                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                            <span>LES</span>
+                                            <span>TECHNO</span>
+                                            <span>LOGIES</span>
+                                            <span>QUE VOUS</span>
+                                            <span>CHOISIREZ</span>
                                         </div>
                                         <div class="slice s1">
                                             <span class="overlay"></span>
@@ -318,40 +334,6 @@
                                             </div><!-- /s2 -->
                                         </div><!-- /s1 -->
                                     </div><!-- /view -->
-                                </div>
-                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="col-xs-12 col-sm-6 partie-portfolio" id="site-6">
-                            <div class="partie-portfolio-inner">
-                                <div class="title-partie-portfolio">
-                                    <h3>Office notarial de Pacé</h3>
-                                    <h4>Présentation d'un office notarial</h4>
-                                </div>
-                                <div class="view-container">
-                                    <div class="view">
-                                        <div class="view-back">
-                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
-                                        </div>
-                                        <div class="slice s1">
-                                            <span class="overlay"></span>
-                                            <div class="slice s2">
-                                                <span class="overlay"></span>
-                                                <div class="slice s3">
-                                                    <span class="overlay"></span>
-                                                    <div class="slice s4">
-                                                        <span class="overlay"></span>
-                                                        <div class="slice s5">
-                                                            <span class="overlay"></span>
-                                                        </div><!-- /s5 -->
-                                                    </div><!-- /s4 -->
-                                                </div><!-- /s3 -->
-                                            </div><!-- /s2 -->
-                                        </div><!-- /s1 -->
-                                    </div><!-- /view -->
-                                </div>
-                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
                                 </div>
                             </div>  
                         </div>
@@ -361,14 +343,11 @@
         </div>
     </div>
     <div class="container-fluid bg-black">
-        <div class="row intersection" id="intersection2">            
+        <div class="row intersection" id="intersection3">            
             <div class="col-xs-12 col-sm-6 intersection-inner">
-                <div>Restons en contact, </div><br/>
+                <div>Une solution sur mesure adapatée à VOS besoins.</div><br/>
                 <div>
-                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                    <span id="mail">timothyleroch@gmail.com</span>
+                    <span>Ni plus, ni moins.</span>
                 </div>
             </div>
         </div>
@@ -383,14 +362,34 @@
                         </div>
                     </div>
                     <section class="section--purple wow fadeInRight" data-wow-duration="2s">
-                        <ul>
-                            <li>Espace membres</li>
-                            <li>Barre de recherche</li>
-                            <li>NewsLetters</li>
-                            <li>Actualités</li>
-                            <li>Partage</li>
-                            <li>Commentaires</li>
-                        </ul>
+                        <div class='row fonctionnalites'>
+                            <div class='col-xs-12 col-sm-3'>
+                                <img class="img-responsive" src="{{ asset('bundles/core/images/inscription.png') }}" alt="inscription">
+                            </div>
+                            <div class='col-xs-12 col-sm-3'>
+                                <img class="img-responsive" src="{{ asset('bundles/core/images/commentaires.png') }}" alt="commentaires">
+                            </div>
+                            <div class='col-xs-12 col-sm-3'>
+                                <img class="img-responsive" src="{{ asset('bundles/core/images/confirmation.png') }}" alt="confirmation">
+                            </div>
+                            <div class='col-xs-12 col-sm-3'>
+                                <img class="img-responsive" src="{{ asset('bundles/core/images/connexion.png') }}" alt="connexion">
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-xs-12 col-sm-3'>
+                                <img class="img-responsive" src="{{ asset('bundles/core/images/newsletter.png') }}" alt="newsletter">
+                            </div>
+                            <div class='col-xs-12 col-sm-3'>
+                                <img class="img-responsive" src="{{ asset('bundles/core/images/partage.png') }}" alt="partage">
+                            </div>
+                            <div class='col-xs-12 col-sm-3'>
+                                <img class="img-responsive" src="{{ asset('bundles/core/images/recherche.png') }}" alt="recherche">
+                            </div>
+                            <div class='col-xs-12 col-sm-3'>
+                                <img class="img-responsive" src="{{ asset('bundles/core/images/erreur.png') }}" alt="erreur">
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -417,21 +416,21 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-6">
-                                    <form class="form">
+                                    <form class="form" action="{{ url('core_formulaire') }}" method="post">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Votre Nom">
+                                            <input type="text" name="nom" class="form-control" placeholder="Votre Nom" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Société">
+                                            <input type="text" name="societe"  class="form-control" placeholder="Société">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Sujet">
+                                            <input type="text" name="sujet" class="form-control" placeholder="Sujet" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Votre mail">
+                                            <input type="text" name="mail" class="form-control" placeholder="Votre mail" required>
                                         </div>
                                         <div class="form-group">
-                                            <textarea  class="form-control" placeholder="Message"></textarea>
+                                            <textarea  class="form-control" name="message" placeholder="Message" required></textarea>
                                         </div>
                                         <button type="submit" class="btn btn-default btn-black">Envoyer</button>
                                     </form>
@@ -447,9 +446,15 @@
 
 {% block script %}
 
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATrTXI4t-jhvm7BW8zA4Ghr-DFVRJwc3E&callback=initMap"
     async defer></script>
     <script>
+
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");
+            ;
+        });
         //Map
         function initMap() {
             var myLatLng = {lat: 47.978432, lng: -1.720283};
@@ -488,7 +493,6 @@
 
         var leftIntersection;
         $(window).bind('mousewheel', function (event) {
-
             checkNavbar();
 
             //Progress Bar
@@ -502,7 +506,7 @@
             }
 
             $('.intersection').each(function () {
-                var elmIsOnView = $(this).visible();
+                var elmIsOnView = ($(this)).visible();
                 var newLeft;
                 if (elmIsOnView) {
                     leftIntersection = parseInt($(this).find('.intersection-inner').css('left'));
@@ -541,9 +545,19 @@
                         complete: checkNavbar
                     });
         }
+
         new WOW().init();
 
-
+        if (window.addEventListener) {
+            var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
+            window.addEventListener("keydown", function (e) {
+                kkeys.push(e.keyCode);
+                if (kkeys.toString().indexOf(konami) >= 0) {
+                    alert('cheat [ON] ');
+                    window.location = "https://fr.wikipedia.org/wiki/Code_Konami";
+                }
+            }, true);
+        }
     </script>
 {% endblock %}
 

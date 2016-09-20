@@ -1,3 +1,6 @@
 core_homepage:
     path:     /
     defaults: { _controller: CoreBundle:Default:accueil }
+core_formulaire:
+    path:     /formulaire-contact
+    defaults: { _controller: CoreBundle:Default:contact }    
