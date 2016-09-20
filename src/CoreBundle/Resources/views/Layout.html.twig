@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        {#        <link rel="icon" href="{{ asset('bundles/notaire/images/favicon.ico') }}">#}
+
+        <title>Timothy LE ROCH - Développeur Web</title>
+        <link rel="stylesheet" href="{{ asset('bundles/core/css/style.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/core/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/core/css/font-awesome/css/font-awesome.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/core/css/animate.css') }}">
+
+        {% block stylesheet %}
+        {% endblock %}
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="{{ asset('bundles/core/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('bundles/core/js/wow.js') }}"></script>
+        {% block javascript %}
+        {% endblock %}
+
+    </head>
+
+    <body>
+        {% block body %}
+        {% endblock %}
+
+        <footer style="background-color: grey; height:60px; margin-top: 15px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12" style="text-align: center; line-height: 50px">
+                        <span style="display:inline-block">@ Conception et réalisation par Timothy LE ROCH - Créateur de site Web Rennes</span>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+        {% block script %}
+        {% endblock %}
+    </body>
+</html>
+
+

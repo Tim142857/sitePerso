@@ -1,0 +1,2 @@
+
+Handling of 'mousewheel' input event was delayed for 117 ms due to main thread being busy. Consider marking event handler as 'passive' to make the page more responive.

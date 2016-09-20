@@ -1,0 +1,549 @@
+{% extends "CoreBundle::Layout.html.twig" %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('bundles/core/css/progressBar.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/core/js/3Dhovereffects/css/style_common.css') }}" />
+{% endblock %}
+{% block javascript %}
+    <script src="{{ asset('bundles/core/js/3Dhovereffects/js/jquery.hoverfold.js') }}"></script>
+    <script src="{{ asset('bundles/core/js/3Dhovereffects/js/modernizr.custom.69142.js') }}"></script>
+    <script src="{{ asset('bundles/core/js/visible.js') }}"></script>
+{% endblock %}
+{% block body %}
+    <div class="container-fluid" id="banniere">
+        <div class="row">
+            <div class="col-xs-12">
+                <img  src="{{ asset('bundles/core/images/banniereBeta.jpg') }}" alt="banniere">
+            </div>
+        </div>        
+    </div>
+    <nav class="navbar navbar-default" id="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12" id="container-ul-navbar">
+                    <ul class="nav navbar-nav">
+                        <li id="competences"><a href="#" class="link" data-target="bandeau-competences">COMPETENCES</a></li>
+                        <li id="portfolio"><a href="#" class="link" data-target="bandeau-portfolio">PORTFOLIO</a></li>
+                        <li id="timothy-le-roch"><a href="#banniere">Timothy LE ROCH</a></li>
+                        <li id="mes-hobbies"><a href="#" class="link" data-target="bandeau-fonctionnalites">FONCTIONNALITES</a></li>
+                        <li id="me-contacter"><a href="#" class="link" data-target="bandeau-me-contacter">ME CONTACTER</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-white" id="premier-container-fluid">
+        <div class="container">
+            <div class="row bandeau" id="bandeau-qui-suis-je">
+                <div class="col-xs-12">
+                    <div class="title">
+                        <h2>QUI SUIS - JE ?</h2>
+                        <div class="title-puce">
+                            <img class="img-responsive" src="{{ asset('bundles/core/images/puce.PNG') }}" alt="puce">
+                        </div>
+                    </div>
+                    <div class="bandeau-content">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="partie-premier-bandeau">
+                                    <h2>Qui suis-je?</h2>
+                                    <p>Jeune développeur passionné de développement en tout genre,<br/> je suis un breton de 24 ans</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="partie-premier-bandeau">
+                                    <h2>Pourquoi me choisir?</h2>
+                                    <p>blabla<br/>et blablalblabla<br/>Encore blablablababla<br/>Et pour finir blablabla</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="partie-premier-bandeau">
+                                    <h2>Plus qu'un travail, une passion</h2>
+                                    <p>blabla<br/>et blablalblabla<br/>Encore blablablababla<br/>Et pour finir blablabla</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row intersection" id="intersection1">            
+            <div class="col-xs-12 col-sm-6 intersection-inner">
+                <div>Restons en contact, </div><br/>
+                <div>
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <span id="mail">timothyleroch@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="deuxieme-container-fluid">
+        <div class="container">
+            <div class="row deuxieme-partie bandeau" id="bandeau-competences">
+                <div class="col-xs-12">
+                    <section class="section--purple wow fadeInLeft" data-wow-duration="2s">
+                        <div class="title">
+                            <h2>MES COMPETENCES</h2>
+                            <h3>Je répondrai à vos demandes dans les plus brefs délais</h3>
+                            <div class="title-puce">
+                                <img class="img-responsive" src="{{ asset('bundles/core/images/puce.PNG') }}" alt="puce">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section--purple wow fadeInRight" data-wow-duration="2s">
+                        <div class="bandeau-content">
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #d35400;"><span>HTML</span></div>
+                                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                                <div class="skill-bar-percent">80%</div>
+                            </div> <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #2980b9;"><span>CSS</span></div>
+                                <div class="skillbar-bar" style="background: #3498db;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div> <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #2c3e50;"><span>JS/jQuery</span></div>
+                                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div> <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="70%">
+                                <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+                                <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                                <div class="skill-bar-percent">70%</div>
+                            </div> <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #333333;"><span>Symfony</span></div>
+                                <div class="skillbar-bar" style="background: #525252;"></div>
+                                <div class="skill-bar-percent">90%</div>
+                            </div> <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="55%">
+                                <div class="skillbar-title" style="background: #27ae60;"><span>C#</span></div>
+                                <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                                <div class="skill-bar-percent">55%</div>
+                            </div> <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="40%">
+                                <div class="skillbar-title" style="background: #124e8c;"><span>Java</span></div>
+                                <div class="skillbar-bar" style="background: #4288d0;"></div>
+                                <div class="skill-bar-percent">40%</div>
+                            </div> <!-- End Skill Bar -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-black">
+        <div class="row intersection" id="intersection2">            
+            <div class="col-xs-12 col-sm-6 intersection-inner">
+                <div>Restons en contact, </div><br/>
+                <div>
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <span id="mail">timothyleroch@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row troisieme-partie bandeau" id="bandeau-portfolio">
+                <div class="col-xs-12">
+                    <div class="title">
+                        <h2>MON PORTFOLIO </h2>
+                        <h3>Les gens qui m'ont déja fait confiance</h3>
+                        <div class="title-puce">
+                            <img class="img-responsive" src="{{ asset('bundles/core/images/puceBlanche.PNG') }}" alt="puce">
+                        </div>
+                    </div>
+                    <section class="section--purple wow fadeInRight" data-wow-duration="2s">
+                        <div class="col-xs-12 col-sm-6 partie-portfolio" id="office-notarial">
+                            <div class="partie-portfolio-inner">
+                                <div class="title-partie-portfolio">
+                                    <h3>Office notarial de Pacé</h3>
+                                    <h4>Présentation d'un office notarial</h4>
+                                </div>
+                                <div class="view-container">
+                                    <div class="view">
+                                        <div class="view-back">
+                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                        </div>
+                                        <div class="slice s1">
+                                            <span class="overlay"></span>
+                                            <div class="slice s2">
+                                                <span class="overlay"></span>
+                                                <div class="slice s3">
+                                                    <span class="overlay"></span>
+                                                    <div class="slice s4">
+                                                        <span class="overlay"></span>
+                                                        <div class="slice s5">
+                                                            <span class="overlay"></span>
+                                                        </div><!-- /s5 -->
+                                                    </div><!-- /s4 -->
+                                                </div><!-- /s3 -->
+                                            </div><!-- /s2 -->
+                                        </div><!-- /s1 -->
+                                    </div><!-- /view -->
+                                </div>
+                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-xs-12 col-sm-6 partie-portfolio" id="fromapac">
+                            <div class="partie-portfolio-inner">
+                                <div class="title-partie-portfolio">
+                                    <h3>Office notarial de Pacé</h3>
+                                    <h4>Présentation d'un office notarial</h4>
+                                </div>
+                                <div class="view-container">
+                                    <div class="view">
+                                        <div class="view-back">
+                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                        </div>
+                                        <div class="slice s1">
+                                            <span class="overlay"></span>
+                                            <div class="slice s2">
+                                                <span class="overlay"></span>
+                                                <div class="slice s3">
+                                                    <span class="overlay"></span>
+                                                    <div class="slice s4">
+                                                        <span class="overlay"></span>
+                                                        <div class="slice s5">
+                                                            <span class="overlay"></span>
+                                                        </div><!-- /s5 -->
+                                                    </div><!-- /s4 -->
+                                                </div><!-- /s3 -->
+                                            </div><!-- /s2 -->
+                                        </div><!-- /s1 -->
+                                    </div><!-- /view -->
+                                </div>
+                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-xs-12 col-sm-6 partie-portfolio" id="black-query">
+                            <div class="partie-portfolio-inner">
+                                <div class="title-partie-portfolio">
+                                    <h3>Office notarial de Pacé</h3>
+                                    <h4>Présentation d'un office notarial</h4>
+                                </div>
+                                <div class="view-container">
+                                    <div class="view">
+                                        <div class="view-back">
+                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                        </div>
+                                        <div class="slice s1">
+                                            <span class="overlay"></span>
+                                            <div class="slice s2">
+                                                <span class="overlay"></span>
+                                                <div class="slice s3">
+                                                    <span class="overlay"></span>
+                                                    <div class="slice s4">
+                                                        <span class="overlay"></span>
+                                                        <div class="slice s5">
+                                                            <span class="overlay"></span>
+                                                        </div><!-- /s5 -->
+                                                    </div><!-- /s4 -->
+                                                </div><!-- /s3 -->
+                                            </div><!-- /s2 -->
+                                        </div><!-- /s1 -->
+                                    </div><!-- /view -->
+                                </div>
+                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-xs-12 col-sm-6 partie-portfolio" id="site-4">
+                            <div class="partie-portfolio-inner">
+                                <div class="title-partie-portfolio">
+                                    <h3>Office notarial de Pacé</h3>
+                                    <h4>Présentation d'un office notarial</h4>
+                                </div>
+                                <div class="view-container">
+                                    <div class="view">
+                                        <div class="view-back">
+                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                        </div>
+                                        <div class="slice s1">
+                                            <span class="overlay"></span>
+                                            <div class="slice s2">
+                                                <span class="overlay"></span>
+                                                <div class="slice s3">
+                                                    <span class="overlay"></span>
+                                                    <div class="slice s4">
+                                                        <span class="overlay"></span>
+                                                        <div class="slice s5">
+                                                            <span class="overlay"></span>
+                                                        </div><!-- /s5 -->
+                                                    </div><!-- /s4 -->
+                                                </div><!-- /s3 -->
+                                            </div><!-- /s2 -->
+                                        </div><!-- /s1 -->
+                                    </div><!-- /view -->
+                                </div>
+                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-xs-12 col-sm-6 partie-portfolio" id="site-5">
+                            <div class="partie-portfolio-inner">
+                                <div class="title-partie-portfolio">
+                                    <h3>Office notarial de Pacé</h3>
+                                    <h4>Présentation d'un office notarial</h4>
+                                </div>
+                                <div class="view-container">
+                                    <div class="view">
+                                        <div class="view-back">
+                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                        </div>
+                                        <div class="slice s1">
+                                            <span class="overlay"></span>
+                                            <div class="slice s2">
+                                                <span class="overlay"></span>
+                                                <div class="slice s3">
+                                                    <span class="overlay"></span>
+                                                    <div class="slice s4">
+                                                        <span class="overlay"></span>
+                                                        <div class="slice s5">
+                                                            <span class="overlay"></span>
+                                                        </div><!-- /s5 -->
+                                                    </div><!-- /s4 -->
+                                                </div><!-- /s3 -->
+                                            </div><!-- /s2 -->
+                                        </div><!-- /s1 -->
+                                    </div><!-- /view -->
+                                </div>
+                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-xs-12 col-sm-6 partie-portfolio" id="site-6">
+                            <div class="partie-portfolio-inner">
+                                <div class="title-partie-portfolio">
+                                    <h3>Office notarial de Pacé</h3>
+                                    <h4>Présentation d'un office notarial</h4>
+                                </div>
+                                <div class="view-container">
+                                    <div class="view">
+                                        <div class="view-back">
+                                            <span><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                        </div>
+                                        <div class="slice s1">
+                                            <span class="overlay"></span>
+                                            <div class="slice s2">
+                                                <span class="overlay"></span>
+                                                <div class="slice s3">
+                                                    <span class="overlay"></span>
+                                                    <div class="slice s4">
+                                                        <span class="overlay"></span>
+                                                        <div class="slice s5">
+                                                            <span class="overlay"></span>
+                                                        </div><!-- /s5 -->
+                                                    </div><!-- /s4 -->
+                                                </div><!-- /s3 -->
+                                            </div><!-- /s2 -->
+                                        </div><!-- /s1 -->
+                                    </div><!-- /view -->
+                                </div>
+                                <div class='technologies-utilisees'>PHP(Symfony)/SQL/HTML/CSS
+                                </div>
+                            </div>  
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-black">
+        <div class="row intersection" id="intersection2">            
+            <div class="col-xs-12 col-sm-6 intersection-inner">
+                <div>Restons en contact, </div><br/>
+                <div>
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <span id="mail">timothyleroch@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row bandeau" id="bandeau-fonctionnalites" style="color:white;">
+                <div class="col-xs-12">
+                    <div class="title">
+                        <h2 style="color:white;">FONCTIONNALITES</h2>
+                        <h3>Ce que je peux mettre en oeuvre pour vous</h3>
+                        <div class="title-puce">
+                            <img class="img-responsive" src="{{ asset('bundles/core/images/puceBlanche.PNG') }}" alt="puce">
+                        </div>
+                    </div>
+                    <section class="section--purple wow fadeInRight" data-wow-duration="2s">
+                        <ul>
+                            <li>Espace membres</li>
+                            <li>Barre de recherche</li>
+                            <li>NewsLetters</li>
+                            <li>Actualités</li>
+                            <li>Partage</li>
+                            <li>Commentaires</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row cinquieme-partie bandeau" id="bandeau-me-contacter">
+                <div class="col-xs-12">
+                    <div class="title">
+                        <h2>ME CONTACTER</h2>
+                        <h3>Je répondrai à vos demandes dans les plus brefs délais</h3>
+                        <div class="title-puce">
+                            <img class="img-responsive" src="{{ asset('bundles/core/images/puce.PNG') }}" alt="puce">
+                        </div>
+                    </div>
+                    <section class="section--purple wow fadeInLeft" data-wow-duration="2s">
+                        <div class="bandeau-content">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div id="map">
+                                    </div>
+                                    <div id="map2">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <form class="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Votre Nom">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Société">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Sujet">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Votre mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea  class="form-control" placeholder="Message"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-default btn-black">Envoyer</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+    async defer></script>
+    <script>
+        //Map
+        function initMap() {
+            var myLatLng = {lat: 47.978432, lng: -1.720283};
+            var center = {lat: 48.00049, lng: -1.894112};
+            var centerFrance = {lat: 46.754917, lng: 2.625732};
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: center,
+                scrollwheel: false,
+                zoom: 8
+            });
+            var map2 = new google.maps.Map(document.getElementById('map2'), {
+                center: centerFrance,
+                scrollwheel: false,
+                zoom: 4
+            });
+
+            // Create a marker and set its position.
+            var marker = new google.maps.Marker({
+                map: map,
+                position: myLatLng,
+                title: 'Hello World!'
+            });
+            var marker2 = new google.maps.Marker({
+                map: map2,
+                position: myLatLng,
+                title: 'Hello World!'
+            });
+        }
+        //Scroll vers l'ancre à partir du menu
+
+        $(".link").click(function () {
+            scrollToAnchor($(this));
+        });
+
+
+        var leftIntersection;
+        $(window).bind('mousewheel', function (event) {
+
+            checkNavbar();
+
+            //Progress Bar
+            var isOnView = $('#bandeau-competences').visible();
+            if (isOnView) {
+                jQuery('.skillbar').each(function () {
+                    jQuery(this).find('.skillbar-bar').animate({
+                        width: jQuery(this).attr('data-percent')
+                    }, 2500);
+                });
+            }
+
+            $('.intersection').each(function () {
+                var elmIsOnView = $(this).visible();
+                var newLeft;
+                if (elmIsOnView) {
+                    leftIntersection = parseInt($(this).find('.intersection-inner').css('left'));
+                    if (event.originalEvent.wheelDelta >= 0) {
+                        newLeft = leftIntersection - 45;
+                        if (newLeft < 0) {
+                            newLeft = 0;
+                        }
+                        $(this).find('.intersection-inner').css('left', newLeft);
+                    } else {
+                        newLeft = leftIntersection + 45;
+                        if (newLeft > 450) {
+                            newLeft = 450;
+                        }
+                        $(this).find('.intersection-inner').css('left', newLeft);
+                    }
+                }
+            });
+        });
+
+        function checkNavbar() {
+            //Navbar fixed top
+            var height = $('#banniere').height();
+            if ($(this).scrollTop() > height) {
+                $("#navbar").addClass("navbar-fixed-top");
+            } else {
+                $("#navbar").removeClass("navbar-fixed-top");
+            }
+        }
+        function scrollToAnchor(elm) {
+            var elmTarget = $("[id='" + elm.data('target') + "']");
+            $('html,body').animate({
+                scrollTop: elmTarget.offset().top},
+                    {
+                        duration: 2000,
+                        complete: checkNavbar
+                    });
+        }
+        new WOW().init();
+
+
+    </script>
+{% endblock %}
+

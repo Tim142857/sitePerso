@@ -1,0 +1,53 @@
+body{
+
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.premier-bandeau .bg-black{
+    height:200px;
+}
+
+.premier-bandeau{
+    margin-bottom: 25px;
+}
+
+.partie-premier-bandeau{    
+    padding: 1px 10px 15px 22px;
+    color:white;
+}
+
+.partie-premier-bandeau h2{
+    color:blue;
+    font-size: 20px;
+}
+
+.navbar{
+    background-color: black !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white !important;    
+}
+
+.bandeau{
+    height:300px;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h2{
+    display: inline-block;
+}
+
+#bandeau-me-contacter{
+    height:500px;
+}

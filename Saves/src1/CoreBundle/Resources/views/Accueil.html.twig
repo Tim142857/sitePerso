@@ -1,0 +1,237 @@
+{% extends "CoreBundle::Layout.html.twig" %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('bundles/core/css/progressBar.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="container-fluid" id="banniere">
+        <div class="row">
+            <div class="col-xs-12">
+                <img style="width: 100%" src="{{ asset('bundles/core/images/banniere.jpg') }}" alt="banniere">
+            </div>
+        </div>        
+    </div>
+    <nav class="navbar navbar-default" id="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12" style="text-align: center">
+                    <ul class="nav navbar-nav" style="width: 100%">
+                        <li id="" style="width: 15%"><a href="#" class="link" data-target="bandeau-competences">Compétences</a></li>
+                        <li id="portfolio" style="width: 15%"><a href="#" class="link" data-target="bandeau-portfolio">Portfolio</a></a></li>
+                        <li id="timothy-le-roch" style="width: 40%"><a href="#navbar">Timothy LE ROCH</a></li>
+                        <li id="mes-hobbies" style="width: 15%"><a href="#" class="link" data-target="bandeau-mes-hobbies">Mes hobbies</a></li>
+                        <li id="me-contacter" style="width: 15%"><a href="#" class="link" data-target="bandeau-me-contacter">Me contacter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-white">
+        <div class="container">
+            <div class="row premier-bandeau bandeau" id="bandeau-competences">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="bg-black partie-premier-bandeau">
+                        <h2>Qui suis-je?</h2>
+                        <p>Jeune développeur passionné de développement en tout genre,<br/> je suis un breton de 24 ans</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="bg-black partie-premier-bandeau">
+                        <h2>Pourquoi me choisir?</h2>
+                        <p>blabla<br/>et blablalblabla<br/>Encore blablablababla<br/>Et pour finir blablabla</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="bg-black partie-premier-bandeau">
+                        <h2>Plus qu'un travail, une passion</h2>
+                        <p>blabla<br/>et blablalblabla<br/>Encore blablablababla<br/>Et pour finir blablabla</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row deuxieme-partie bandeau" id="bandeau-competences">
+            <div class="col-xs-12">
+                <div class="title">
+                    <h2>MES COMPETENCES</h2>
+                </div>
+                <div class="skillbar clearfix " data-percent="75%">
+                    <div class="skillbar-title" style="background: #d35400;"><span>HTML</span></div>
+                    <div class="skillbar-bar" style="background: #e67e22;"></div>
+                    <div class="skill-bar-percent">75%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="70%">
+                    <div class="skillbar-title" style="background: #2980b9;"><span>CSS</span></div>
+                    <div class="skillbar-bar" style="background: #3498db;"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="70%">
+                    <div class="skillbar-title" style="background: #2c3e50;"><span>JS/jQuery</span></div>
+                    <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="65%">
+                    <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+                    <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                    <div class="skill-bar-percent">65%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="85%">
+                    <div class="skillbar-title" style="background: #333333;"><span>Symfony</span></div>
+                    <div class="skillbar-bar" style="background: #525252;"></div>
+                    <div class="skill-bar-percent">85%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="50%">
+                    <div class="skillbar-title" style="background: #27ae60;"><span>C#</span></div>
+                    <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                    <div class="skill-bar-percent">50%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="30%">
+                    <div class="skillbar-title" style="background: #124e8c;"><span>Java</span></div>
+                    <div class="skillbar-bar" style="background: #4288d0;"></div>
+                    <div class="skill-bar-percent">30%</div>
+                </div> <!-- End Skill Bar -->
+            </div>
+        </div>
+        <div class="row troisieme-partie bandeau" id="bandeau-portfolio">
+            <div class="col-xs-12">
+                <div class="title">
+                    <h2>MON PORTFOLIO </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row quatrieme-partie bandeau" id="bandeau-mes-hobbies">
+            <div class="col-xs-12">
+                <div class="title">
+                    <h2>MES HOBBIES</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row cinquieme-partie bandeau" id="bandeau-me-contacter">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="title">
+                        <h2>ME CONTACTER</h2>
+                        <h3>Je répondrai à vos demandes dans les plus brefs délais</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div id="map" style="border:1px solid black; height: 350px; margin-bottom: 25px">
+                    </div>
+                    <div id="map2" style="border:1px solid black; width:180px ; height: 180px; margin-top: -375px">
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Votre Nom">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Société">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Sujet">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Votre mail">
+                        </div>
+                        <div class="form-group">
+                            <textarea  class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+    async defer></script>
+    <script>
+
+        //Map
+        function initMap() {
+            var myLatLng = {lat: 47.978432, lng: -1.720283};
+            var center = {lat: 48.00049, lng: -1.894112};
+            var centerFrance = {lat: 46.754917, lng: 2.625732};
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: center,
+                scrollwheel: false,
+                zoom: 8
+            });
+            var map2 = new google.maps.Map(document.getElementById('map2'), {
+                center: centerFrance,
+                scrollwheel: false,
+                zoom: 4
+            });
+
+            // Create a marker and set its position.
+            var marker = new google.maps.Marker({
+                map: map,
+                position: myLatLng,
+                title: 'Hello World!'
+            });
+            var marker2 = new google.maps.Marker({
+                map: map2,
+                position: myLatLng,
+                title: 'Hello World!'
+            });
+
+        }
+
+        //Scroll vers l'ancre à partir du menu
+        function scrollToAnchor(elm) {
+            var elmTarget = $("[id='" + elm.data('target') + "']");
+            $('html,body').animate({scrollTop: elmTarget.offset().top}, 'slow');
+        }
+        $(".link").click(function () {
+            scrollToAnchor($(this));
+        });
+
+
+        $(window).scroll(function () {
+            //Navbar fixed top
+            var height = $('#banniere').height();
+            if ($(this).scrollTop() > height) {
+                $("#navbar").addClass("navbar-fixed-top");
+            } else {
+                $("#navbar").removeClass("navbar-fixed-top");
+            }
+
+            //Progress Bar
+            isOnView = isElementVisible("#bandeau-competences");
+            if (isOnView) {
+                jQuery('.skillbar').each(function () {
+                    jQuery(this).find('.skillbar-bar').animate({
+                        width: jQuery(this).attr('data-percent')
+                    }, 2500);
+                });
+            }
+        });
+
+        function isElementVisible(elementToBeChecked)
+        {
+            var TopView = $(window).scrollTop();
+            var BotView = TopView + $(window).height();
+            var TopElement = $(elementToBeChecked).offset().top;
+            var BotElement = TopElement + $(elementToBeChecked).height();
+            return ((BotElement <= BotView) && (TopElement >= TopView));
+        }
+
+
+    </script>
+{% endblock %}
+
